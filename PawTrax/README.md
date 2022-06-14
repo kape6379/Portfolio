@@ -1,5 +1,5 @@
 # Paw Trax
-The Paw Trax App is a web application to help dog owners track their pets’ health through activity and factors such as diet, weight, and training. 
+The Paw Trax app is a web application to help dog owners track their pets’ health through activity and factors such as diet, weight, and training. 
 
 ## Features:
 
