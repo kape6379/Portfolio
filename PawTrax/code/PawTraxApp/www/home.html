@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/homeExplore.css">
+        <title>Welcome to PawTrax</title>
+    </head>
+    <body>
+		<div class="navbar">
+			<a class="active" href="#">Home</a>
+			<a href="activity.html">Activity</a>
+			<a href="exercise.html">Exercise</a>
+			<a href="training.html">Training</a>
+			<a href="explore.html">Explore</a>
+			<a href="progress.html">Progress</a>
+		</div><br><br>
+		<h1>Welcome to PawTrax!</h1><br><br>
+		<p>This is the homepage for PawTrax, an app that you can use to help train your dog, interact with other dogs and dog owners, along with so much more!</p>
+		<p>On this page, we should probably have users log in and following that we'll display their profiles as dog owners, along with little sub-profiles for each dog that they have. This could also be the place where we let the users edit their profiles and input information about themselves and their dogs.</p>
+		<button onclick="query()">Attempt to query the database</button>
+		<div id="results">Query results here</div>
+		<div class="row">
+			<div class="column50">Username: <input type="text" placeholder="Username" value="JacksonTrust7"/></div>
+			<div class="column50">User Email: <input type="email" placeholder="Email" value="jatr5453@colorado.edu"/></div>
+		</div>
+		<div class="row">
+			<div class="column50">First Name: <input type="text" placeholder="First Name" value="Jackson"/></div>
+		</div>
+        <script type="text/javascript" src="js/index.js"></script>
+		<script>
+		function query() {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("results").innerHTML = this.responseText;
+					console.log(this.responseText);
+				}
+			};
+			xhttp.open("GET", "ajax_info.txt", true);
+			xhttp.send();
+		}
+		</script>
+    </body>
+</html>

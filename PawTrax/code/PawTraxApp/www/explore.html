@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+        <title>Explore</title>
+    </head>
+    <body>
+      <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="logo-image">
+                            <a href="index.html"> <img src="img/logo1.png" class="img-fluid" width="46" height="46" border-radius="50%" overflow="hidden" margin-top="-6px"></a>
+                        </div>        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="activity.html">Activity</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="exercise.html">Exercise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="training.html">Training</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="explore.html">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="progress.html">Progress</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+          </ul>
+          <a class="btn btn-outline-success" href="loginform.html">Sign In</a>
+
+          <!--form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form-->
+        </div>
+      </nav>
+    </header>
+    <br><br>
+		<h1>Welcome to the Explore page!</h1><br><br>
+		<p>On this page, the main functionality will be to, in the words of Kate, the features list writer, "Incorporates a social aspect into the app to where you can add friends and communicate with them in order for your dogs to have more exposure to other dogs. This feature may include opportunities for users to set up times for their dogs to play, and if they are occupied with work or other things for other users to watch after their dog. Differs from dog walking apps in the sense that the app will mostly have dog owners as users. This feature would also create incentive to use the app more when you compare your dog’s progress with another’s."</p>
+		<p>However, we will likely not be implementing the capability for friends at the outset, as that can get complicated. More to follow.</p>
+		<p>The best thing to do here would be to just display the information of all dogs and their respective owners while displaying the dog's and the owner's information such that they can get into contact with each other, at least to start.</p><br>
+<div class="container">
+    <div class="row featurette">
+      <div class="col-md">
+    <div class="card bg-light text-dark" style="width: 18rem;">
+    <img class="card-img-top" src="img/sophie1.jpg" alt="Picture of {DogName}">
+    <div class="card-body">
+      <h4 onclick="alert('Interact with dog functionality to be implemented')"><u>Name: Sophie</u></h4>
+     <p class="card-text">Age: {DogAge} <br> Breed: {DogBreed} <br> Average Activity per week: {AvgHrsPerWeek} <br> Owner: Jackson Trust</p>
+    </div>
+    </div>
+  </div>
+
+			<div class="col-md">
+				  <div class="card bg-light text-dark" style="width: 18rem;">
+					<img class="card-img-top" src="img/oreo1.jpg" alt="Picture of {DogName}" >
+            <div class="card-body">
+              <h4 onclick="alert('Interact with dog functionality to be implemented')"><u>Name: Oreo</u></h4>
+             <p class="card-text">Age: {DogAge} <br> Breed: {DogBreed} <br> Average Activity per week: {AvgHrsPerWeek} <br> Owner: Jackson Trust</p>
+           </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+            <div class="card bg-light text-dark" style="width: 18rem;">
+            <img class="card-img-top" src="img/tiki1.jpg" alt="Picture of {DogName}">
+              <div class="card-body">
+                <h4 onclick="alert('Interact with dog functionality to be implemented')"><u>Name: Tiki</u></h4>
+               <p class="card-text">Age: {DogAge} <br> Breed: {DogBreed} <br> Average Activity per week: {AvgHrsPerWeek} <br> Owner: Jerry Trust</p>
+             </div>
+            </div>
+          </div>
+		</div>
+
+<hr class="featurette-divider">
+
+		<div class="row featurette">
+
+      <div class="col-md">
+          <div class="card bg-light text-dark" style="width: 18rem;">
+          <img class="card-img-top" src="img/dakota1.jpg" alt="Picture of Dakota">
+            <div class="card-body">
+              <h4 onclick="alert('Interact with dog functionality to be implemented')"><u>Name: Dakota</u></h4>
+             <p class="card-text">Age: {DogAge} <br> Breed: {DogBreed} <br> Average Activity per week: {AvgHrsPerWeek} <br> Owner: Steve Down</p>
+           </div>
+          </div>
+        </div>
+
+        <div class="col-md">
+            <div class="card bg-light text-dark" style="width: 18rem;">
+            <img class="card-img-top" src="img/dolce1.jpg" alt="Picture of Dolce">
+              <div class="card-body">
+                <h4 onclick="alert('Interact with dog functionality to be implemented')"><u>Name: Dolce</u></h4>
+               <p class="card-text">Age: {DogAge} <br> Breed: {DogBreed} <br> Average Activity per week: {AvgHrsPerWeek} <br>Owner: Birt Stem, Grethe Stem</p>
+             </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+              <div class="card bg-light text-dark" style="width: 18rem;">
+              <img class="card-img-top" src="img/ozzie1.jpg" alt="Picture of Ozzie">
+                <div class="card-body">
+                  <h4 onclick="alert('Interact with dog functionality to be implemented')"><u>Name: Dolce</u></h4>
+                 <p class="card-text">Age: {DogAge} <br> Breed: {DogBreed} <br> Average Activity per week: {AvgHrsPerWeek} <br>Owner: Zoe Moore, Jonathon Tchida</p>
+               </div>
+              </div>
+            </div>
+
+
+		</div>
+    </div>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

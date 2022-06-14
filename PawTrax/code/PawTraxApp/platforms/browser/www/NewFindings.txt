@@ -1,0 +1,13 @@
+Here are some things that I'm finding out when I run the application using the command "cordova run browser" from Code/PawTraxApp
+
+6/29/20
+	- Every time you run the command above, cordova takes the files from www and pastes over the files in platforms/browser/www
+		- For instance, this file will appear in platforms/browser/www just by doing the server start command, and any changes or new files that I add in platforms/browser/www that don't exist in www are deleted.
+		- With that in mind, it looks like we need to put our code in that specific directory, at least for now.
+		
+	- The start page for our app, along with other properties, is in platforms/browser/www/manifest.json and they come from config.xml.
+		- The other two manifest.json files (one in node_modules/cordova-browser/bin/template/www/manifest.json and other in platforms/browser/platform_www/manifest.json) don't seem to have an effect, and they don't overwrite each other, as each has its own unique application name.
+		- I just noticed that the information in platforms/browser/www/manifest.json partially comes from config.xml, the base configuration file for the whole damn thing.
+		
+	- By the way, the application now routes to www/newIndex.html, that's something I changed in config.xml. You guys can also try it out if you want, however you want.
+		- To change the styling of the front page (and all pages really), www/css/index.css is the file that contains most of the customizations that we see right now.

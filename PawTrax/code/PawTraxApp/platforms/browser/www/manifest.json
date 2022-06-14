@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "PawTrax",
+  "short_name": "PwTrx",
+  "version": "io.cordova.hellocordova",
+  "description": "A sample Apache Cordova application that responds to the deviceready event. Also is the beginning of PawTrax!",
+  "author": "CU Boulder CSCI3308 Summer 2020 Team Potato Chip Scapegoat",
+  "icons": [],
+  "start_url": "home.html"
+}
