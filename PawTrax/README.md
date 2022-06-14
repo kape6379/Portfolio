@@ -1,4 +1,7 @@
 # Paw Trax
+By: Megan Kang, Kate Pendavinji, Jackson Trust 
+
+
 The Paw Trax app is a web application to help dog owners track their pets’ health through activity and factors such as diet, weight, and training. 
 
 ## Features:
