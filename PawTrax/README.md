@@ -11,7 +11,9 @@ Utilizing tools such as Xampp and MySql we created a database storing the age, w
 * Similarly, the _training page_ helps users promote health through informative research and external links which are included within the page. 
 * Our _explore page_ is a resource for users to access the dogs that are in the database, and when you add a dog this gets updated accordingly. 
 * The _progress page_ is used to update your dogs’ weight and calculate your dogs’ average weight increase/decrease for the week based on the difference between the last two weight entries. 
-* Finally, we have a _profile page_ where you can update your pets’ progress, activity and add new pets if necessary! Each feature complements the other features providing for a functional, user friendly application design. 
+* Finally, we have a _profile page_ where you can update your pets’ progress, activity and add new pets if necessary! 
+
+Each listed feature complements the others providing for a functional, user friendly application design. 
 
 ## Repository Set Up:
 
