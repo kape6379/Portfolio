@@ -1,4 +1,4 @@
-# Collections of Projects and Academic Exploration
+# Collection of Projects and Academic Exploration
 By Kate Pendavinji
 
 ## PawTrax (Software Development)
