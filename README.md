@@ -5,6 +5,16 @@
 A collection of applied machine learning projects, including supervised, unsupervised, and natural language processing methods.  
 Read more about my machine learning exploration [here](https://github.com/kape6379/Portfolio/blob/main/MachineLearning.md).  
 
+## Object-Oriented Analysis and Design (OOAD)  
+Three projects showcasing my OOAD code organization and use of design patterns, including Command, State, Observer, Singleton, Strategy, Abstract Factory, Dependency Injection, REST API integration, and SQLite database design.  
+See more about these projects [here](https://github.com/kape6379/Portfolio/tree/main/OOAD).  
+
+## Robotics: Mobile Manipulation & Task Execution with Tiago Robot
+
+Project focusing on enabling a robot to perform mobile manipulation tasks—navigating its environment, grasping objects, and executing sequences of motions. Key skills demonstrated include motion planning, perception, control systems, and robotics software integration.
+
+[![Watch the demo](https://img.youtube.com/vi/pbPZYxVDMXU/0.jpg)](https://youtu.be/pbPZYxVDMXU)  
+*Click the thumbnail to watch the project demo video.*
 
 ## Numerical Computation  
 Group project applying multiple interpolation methods on topographic data using Python and CloudCompare. Demonstrates data processing and analysis workflows. 
